@@ -43,7 +43,7 @@
     <div class="pill">Concept schematic · not permit drawings</div>
     <h1>Bathroom remodel</h1>
   </div>
-  <p class="muted">Known room size: roughly <strong>66&quot; wide × 132&quot; long</strong>. Current direction: single live-edge floating shelf with basin, toilet relocated to the opposite/left wall, outswing door, left-wall HVAC register, and walk-in shower at the old toilet end.</p>
+  <p class="muted">Known room size: roughly <strong>66&quot; wide × 132&quot; long</strong>. Current direction: single live-edge floating shelf with basin between two doors, toilet relocated to the opposite/left wall, left door swings out, right door swings in, left-wall HVAC register, and walk-in shower at the old toilet end.</p>
 </header>
 
 <main>
@@ -80,6 +80,19 @@
       <text x="438" y="258" text-anchor="middle" font-size="17" font-weight="900">floating live-edge shelf + one basin</text>
       <text x="438" y="281" text-anchor="middle" font-size="13" fill="#637083">block wall for shelf brackets / cleat before closing studs</text>
 
+      <!-- two doors flanking sink -->
+      <line x1="240" y1="128" x2="240" y2="235" stroke="#b45309" stroke-width="7"/>
+      <line x1="240" y1="128" x2="126" y2="128" stroke="#b45309" stroke-width="5" opacity=".8"/>
+      <path d="M240 128 A107 107 0 0 0 133 235" fill="none" stroke="#b45309" stroke-width="4"/>
+      <text x="42" y="220" font-size="15" font-weight="900" fill="#b45309">left door swings out</text>
+      <text x="42" y="240" font-size="12" fill="#b45309">flanks sink shelf</text>
+
+      <line x1="636" y1="128" x2="636" y2="235" stroke="#b45309" stroke-width="7"/>
+      <line x1="636" y1="235" x2="526" y2="235" stroke="#b45309" stroke-width="5" opacity=".8"/>
+      <path d="M636 235 A107 107 0 0 0 529 128" fill="none" stroke="#b45309" stroke-width="4"/>
+      <text x="648" y="220" font-size="15" font-weight="900" fill="#b45309">right door swings in</text>
+      <text x="648" y="240" font-size="12" fill="#b45309">watch shelf clearance</text>
+
       <!-- toilet on left wall -->
       <g transform="translate(314 445) rotate(90)">
         <rect x="-44" y="-34" width="88" height="62" rx="12" fill="#fff" stroke="#111827" stroke-width="4"/>
@@ -110,12 +123,10 @@
       <path d="M601 646 C642 680, 651 752, 607 825" fill="none" stroke="#111827" stroke-width="4"/>
       <text x="652" y="735" font-size="14" font-weight="800">glass/open entry?</text>
 
-      <!-- outswing door -->
-      <line x1="636" y1="676" x2="636" y2="834" stroke="#b45309" stroke-width="7"/>
-      <line x1="636" y1="834" x2="790" y2="834" stroke="#b45309" stroke-width="5" opacity=".8"/>
-      <path d="M636 834 A158 158 0 0 1 794 676" fill="none" stroke="#b45309" stroke-width="4"/>
-      <text x="690" y="655" font-size="16" font-weight="900" fill="#b45309">door opens out</text>
-      <text x="690" y="676" font-size="12" fill="#b45309">keeps interior clear</text>
+      <!-- circulation / shower entry note -->
+      <path d="M604 646 C648 690, 650 758, 607 825" fill="none" stroke="#111827" stroke-width="4"/>
+      <text x="650" y="700" font-size="14" font-weight="900">open/glass shower entry</text>
+      <text x="650" y="720" font-size="12" fill="#637083">not a room door</text>
 
       <!-- callouts -->
       <rect x="662" y="126" width="218" height="136" rx="12" fill="#fef3c7" stroke="#d97706" stroke-width="3"/>
@@ -149,7 +160,7 @@
     <p class="note">Old sketch subtotal: <strong>$583</strong> = saw + doors + lights.</p>
     <div class="callout danger"><strong>Blunt correction:</strong> this is now a contractor conversation sketch, not fake-architect clip art. Still not code/permit-ready.</div>
     <h3>Open measurements</h3>
-    <ul><li>Exact door opening location from nearest wall.</li><li>Toilet rough-in target and vent route.</li><li>Shower finished dimensions and drain/joist conflict.</li><li>HVAC boot size and duct bay.</li><li>Ceiling height, exhaust fan path, light/switch locations.</li></ul>
+    <ul><li>Exact locations and widths of both doors flanking the sink.</li><li>Left door outswing clearance and right door inswing clearance.</li><li>Toilet rough-in target and vent route.</li><li>Shower finished dimensions and drain/joist conflict.</li><li>HVAC boot size and duct bay.</li><li>Ceiling height, exhaust fan path, light/switch locations.</li></ul>
     <div class="actions"><a href="bathroom-remodel-concept.excalidraw">Download editable Excalidraw</a></div>
   </aside>
 </section>
@@ -161,7 +172,7 @@
 
 <section class="grid">
   <article class="card"><h2>Quote-ready scope notes</h2><ul><li><strong>Demo:</strong> remove existing vanity/toilet finishes as needed; inspect subfloor and framing.</li><li><strong>Plumbing:</strong> relocate toilet to left/opposite wall; verify drain size, slope, venting, joist path.</li><li><strong>Shower:</strong> choose pan system, waterproofing membrane, curb/curbless, drain location, glass/opening.</li><li><strong>Electrical:</strong> GFCI outlets, vanity lighting, shower-rated light if inside wet zone, exhaust fan.</li><li><strong>HVAC:</strong> relocate/register left wall without conflicting with toilet rough-in.</li><li><strong>Carpentry:</strong> blocking for live-edge shelf, shower glass, accessories, future grab bars.</li></ul></article>
-  <article class="card"><h2>Contractor questions</h2><ul><li>Can the toilet drain/vent legally move to the left wall without ugly soffits or floor surgery?</li><li>Where are the joists running under the proposed shower drain?</li><li>What waterproofing system will you warranty, and where does it terminate?</li><li>Can the door safely swing out into the hall without creating a hallway/code problem?</li><li>Will the HVAC register location interfere with toilet clearance or wall blocking?</li></ul></article>
+  <article class="card"><h2>Contractor questions</h2><ul><li>Can the toilet drain/vent legally move to the left wall without ugly soffits or floor surgery?</li><li>Where are the joists running under the proposed shower drain?</li><li>What waterproofing system will you warranty, and where does it terminate?</li><li>Can the left door safely swing out, and does the right door inswing conflict with the sink shelf or circulation?</li><li>Will the HVAC register location interfere with toilet clearance or wall blocking?</li></ul></article>
 </section>
 </main>
 <footer>This is an owner-planning schematic. Have licensed trades/GC verify plumbing, electrical, HVAC, waterproofing, clearances, structure, and local code before building.</footer>
