@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bathroom Remodel Schematic</title>
+  <style>
+    * { box-sizing: border-box; }
+    :root {
+      --bg: #f5f1e8;
+      --paper: #fffdf7;
+      --ink: #241f1a;
+      --muted: #70665b;
+      --line: #2b241e;
+      --stud: #b9824a;
+      --water: #5fa8d3;
+      --tile: #dfe8e4;
+      --accent: #b85c38;
+      --green: #4d7c59;
+      --yellow: #f1c453;
+      --shadow: 0 22px 60px rgba(41, 31, 20, .16);
+    }
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 20% 0%, rgba(184, 92, 56, .13), transparent 32rem),
+        radial-gradient(circle at 90% 20%, rgba(95, 168, 211, .14), transparent 34rem),
+        var(--bg);
+      line-height: 1.45;
+    }
+    header {
+      padding: 34px 6vw 18px;
+      display: flex;
+      justify-content: space-between;
+      gap: 24px;
+      align-items: end;
+    }
+    h1 { margin: 0; font-size: clamp(2rem, 5vw, 4.5rem); letter-spacing: -.06em; line-height: .95; }
+    .subtitle { max-width: 570px; color: var(--muted); font-size: 1rem; }
+    .pill { display: inline-flex; gap: 8px; align-items: center; border: 1px solid rgba(36,31,26,.16); border-radius: 999px; padding: 8px 12px; background: rgba(255,255,255,.45); font-size: .88rem; color: var(--muted); }
+    main { padding: 18px 6vw 52px; display: grid; gap: 22px; }
+    .grid { display: grid; grid-template-columns: minmax(340px, 1.55fr) minmax(300px, .9fr); gap: 22px; align-items: start; }
+    .card { background: rgba(255, 253, 247, .86); border: 1px solid rgba(36,31,26,.12); border-radius: 28px; box-shadow: var(--shadow); padding: 22px; backdrop-filter: blur(7px); }
+    h2 { margin: 0 0 12px; font-size: 1.25rem; letter-spacing: -.02em; }
+    h3 { margin: 18px 0 8px; font-size: 1rem; }
+    .note { color: var(--muted); font-size: .92rem; }
+    .plan-wrap { overflow: auto; }
+    svg { max-width: 100%; height: auto; display: block; }
+    .legend { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 14px; }
+    .legend span { display: inline-flex; align-items: center; gap: 7px; font-size: .85rem; color: var(--muted); }
+    .swatch { width: 14px; height: 14px; border-radius: 4px; border: 1px solid rgba(0,0,0,.14); }
+    .mock-grid { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 22px; }
+    .mock { min-height: 440px; position: relative; overflow: hidden; }
+    .mock h2 { position: relative; z-index: 1; }
+    .costs { width: 100%; border-collapse: collapse; font-size: .94rem; }
+    .costs td { padding: 9px 0; border-bottom: 1px solid rgba(36,31,26,.1); }
+    .costs td:last-child { text-align: right; font-variant-numeric: tabular-nums; }
+    .costs .total td { font-weight: 800; border-bottom: 0; padding-top: 13px; }
+    ul { padding-left: 19px; margin: 10px 0 0; }
+    li { margin: 7px 0; }
+    .warning { background: #fff2d7; border-left: 5px solid var(--yellow); padding: 12px 14px; border-radius: 14px; font-size: .92rem; }
+    .checklist { display: grid; gap: 10px; }
+    .check { display: grid; grid-template-columns: 24px 1fr; gap: 9px; align-items: start; }
+    .box { width: 20px; height: 20px; border: 2px solid var(--green); border-radius: 6px; margin-top: 1px; }
+    footer { color: var(--muted); padding: 0 6vw 40px; font-size: .85rem; }
+    @media (max-width: 900px) { header, .grid, .mock-grid { grid-template-columns: 1fr; } header { display: block; } .subtitle { margin-top: 14px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <div>
+      <div class="pill">Bathroom remodel · rough schematic</div>
+      <h1>Toilet swap + walk‑in shower plan</h1>
+    </div>
+    <p class="subtitle">A visual working page based on the photos and sketch: the room is roughly 66" wide by 132" long; the toilet moves to the opposite/left wall, the door opens out, the current toilet area becomes a walk‑in shower, and the sink becomes one basin on a floating live-edge shelf.</p>
+  </header>
+
+  <main>
+    <section class="grid">
+      <article class="card plan-wrap">
+        <h2>Dimensioned schematic — working assumptions</h2>
+        <p class="note">Updated working dimensions: room is about <strong>66&quot; wide × 132&quot; long</strong>. The sketch’s <strong>66 7/16&quot; bare stud</strong> note is close enough to treat as the rough width until finished wall layers are known.</p>
+        <svg viewBox="0 0 920 860" role="img" aria-label="Bathroom remodel schematic floor plan">
+          <defs>
+            <pattern id="tile" width="42" height="42" patternUnits="userSpaceOnUse">
+              <rect width="42" height="42" fill="#f7f7f2"/>
+              <path d="M42 0H0V42" fill="none" stroke="#d9d4c8" stroke-width="1"/>
+              <rect x="18" y="18" width="6" height="6" fill="#262626" transform="rotate(45 21 21)"/>
+            </pattern>
+            <marker id="arrow" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto-start-reverse">
+              <path d="M0,0 L10,5 L0,10 z" fill="#2b241e"/>
+            </marker>
+          </defs>
+
+          <!-- floor shell -->
+          <rect x="165" y="95" width="520" height="690" rx="4" fill="url(#tile)" stroke="var(--line)" stroke-width="10"/>
+          <rect x="160" y="90" width="530" height="28" fill="var(--stud)" opacity=".55"/>
+          <rect x="160" y="760" width="530" height="28" fill="var(--stud)" opacity=".35"/>
+          <rect x="150" y="95" width="28" height="690" fill="var(--stud)" opacity=".45"/>
+          <rect x="672" y="95" width="28" height="690" fill="var(--stud)" opacity=".45"/>
+
+          <!-- top dimension -->
+          <line x1="165" y1="55" x2="685" y2="55" stroke="#2b241e" stroke-width="2" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+          <line x1="165" y1="70" x2="165" y2="95" stroke="#2b241e" stroke-width="2"/>
+          <line x1="685" y1="70" x2="685" y2="95" stroke="#2b241e" stroke-width="2"/>
+          <text x="425" y="38" text-anchor="middle" font-size="24" font-weight="800">≈66&quot; room width / 66 7/16&quot; bare stud</text>
+          <text x="425" y="78" text-anchor="middle" font-size="14" fill="#70665b">≈132&quot; room length · verify finished dimensions after wall layers</text>
+
+          <!-- floating live-edge shelf / single basin -->
+          <path d="M205 145 C250 124, 310 148, 365 132 C430 113, 510 145, 642 128 L642 211 C560 226, 505 205, 430 224 C355 244, 286 213, 205 229 Z" fill="#a3693d" stroke="#5b3923" stroke-width="5"/>
+          <path d="M218 212 C305 190, 371 233, 445 207 C510 184, 567 209, 628 191" fill="none" stroke="#4b2d1a" stroke-width="3" opacity=".55"/>
+          <ellipse cx="425" cy="174" rx="72" ry="36" fill="#f5f0e7" stroke="#5b3923" stroke-width="4"/>
+          <circle cx="425" cy="174" r="9" fill="#9fb8bd" stroke="#5b3923" stroke-width="2"/>
+          <path d="M400 144 C398 118, 452 118, 450 144" fill="none" stroke="#3f3a36" stroke-width="6"/>
+          <text x="425" y="255" text-anchor="middle" font-size="18" font-weight="800">Single basin on floating live-edge shelf</text>
+          <text x="425" y="278" text-anchor="middle" font-size="14" fill="#70665b">needs heavy blocking + bracket/cleat layout before drywall</text>
+
+          <!-- toilet moved to opposite / left wall -->
+          <g transform="translate(254 370) rotate(90)">
+            <rect x="-54" y="-44" width="108" height="78" rx="16" fill="#fff" stroke="#2b241e" stroke-width="4"/>
+            <ellipse cx="0" cy="16" rx="42" ry="52" fill="#fff" stroke="#2b241e" stroke-width="4"/>
+            <ellipse cx="0" cy="16" rx="23" ry="31" fill="#dfe8e4" stroke="#2b241e" stroke-width="2"/>
+          </g>
+          <text x="254" y="475" text-anchor="middle" font-size="18" font-weight="800">New toilet</text>
+          <text x="254" y="497" text-anchor="middle" font-size="13" fill="#70665b">opposite / left wall</text>
+          <line x1="180" y1="370" x2="330" y2="370" stroke="#b85c38" stroke-width="2" stroke-dasharray="8 8"/>
+          <line x1="254" y1="300" x2="254" y2="440" stroke="#b85c38" stroke-width="2" stroke-dasharray="8 8"/>
+          <text x="330" y="350" font-size="13" fill="#b85c38" font-weight="700">check 15&quot;+ CL from side obstructions</text>
+          <text x="330" y="382" font-size="13" fill="#b85c38" font-weight="700">24&quot;+ front clearance across room</text>
+
+          <!-- AC register moved left -->
+          <rect x="176" y="318" width="22" height="118" rx="4" fill="#dde2df" stroke="#2b241e" stroke-width="3"/>
+          <g stroke="#2b241e" stroke-width="2" opacity=".7">
+            <line x1="182" y1="334" x2="192" y2="334"/><line x1="182" y1="352" x2="192" y2="352"/><line x1="182" y1="370" x2="192" y2="370"/><line x1="182" y1="388" x2="192" y2="388"/><line x1="182" y1="406" x2="192" y2="406"/>
+          </g>
+          <path d="M204 318 C238 300, 280 300, 318 332" fill="none" stroke="#5fa8d3" stroke-width="5" stroke-dasharray="10 9" marker-end="url(#arrow)"/>
+          <text x="302" y="282" font-size="17" font-weight="800" fill="#245b78">AC register on left wall</text>
+          <text x="302" y="304" font-size="13" fill="#245b78">verify it does not crowd toilet clearances</text>
+
+          <!-- shower where old toilet was -->
+          <rect x="215" y="535" width="300" height="205" rx="18" fill="rgba(95,168,211,.22)" stroke="#245b78" stroke-width="5"/>
+          <path d="M225 552 H505 M225 582 H505 M225 612 H505 M225 642 H505 M225 672 H505 M225 702 H505" stroke="#245b78" stroke-width="2" opacity=".28"/>
+          <circle cx="365" cy="642" r="23" fill="#dfe8e4" stroke="#245b78" stroke-width="5"/>
+          <circle cx="365" cy="642" r="8" fill="#245b78"/>
+          <text x="365" y="514" text-anchor="middle" font-size="21" font-weight="900" fill="#245b78">Walk‑in shower</text>
+          <text x="365" y="766" text-anchor="middle" font-size="14" fill="#245b78">old toilet zone · verify finished interior dimensions</text>
+          <path d="M515 555 C610 570, 640 650, 584 735" fill="none" stroke="#2b241e" stroke-width="4"/>
+          <text x="620" y="650" font-size="16" font-weight="800">open entry / glass panel?</text>
+
+          <!-- outswing door -->
+          <path d="M685 710 A170 170 0 0 1 845 540" fill="rgba(184,92,56,.08)" stroke="#b85c38" stroke-width="4"/>
+          <line x1="685" y1="540" x2="685" y2="710" stroke="#b85c38" stroke-width="7"/>
+          <line x1="685" y1="710" x2="835" y2="710" stroke="#b85c38" stroke-width="5" opacity=".75"/>
+          <text x="720" y="620" font-size="18" font-weight="800" fill="#b85c38">Door opens out</text>
+          <text x="720" y="643" font-size="13" fill="#b85c38">better interior clearance</text>
+        </svg>
+        <div class="legend">
+          <span><i class="swatch" style="background:#d6bea0"></i>live-edge shelf + basin</span>
+          <span><i class="swatch" style="background:#fff"></i>toilet</span>
+          <span><i class="swatch" style="background:rgba(95,168,211,.35)"></i>walk-in shower</span>
+          <span><i class="swatch" style="background:#dde2df"></i>AC register</span>
+          <span><i class="swatch" style="background:#b9824a"></i>open studs/walls</span>
+        </div>
+      </article>
+
+      <aside class="card">
+        <h2>Current cost tracker</h2>
+        <table class="costs" aria-label="Bathroom remodel cost tracker">
+          <tr><td>Saw</td><td>$200.00</td></tr>
+          <tr><td>2x4s</td><td>$51.24</td></tr>
+          <tr><td>3&quot; construction screws</td><td>$35.96</td></tr>
+          <tr><td>Electrical supplies</td><td>$40.00</td></tr>
+          <tr><td>Framing square</td><td>$20.00</td></tr>
+          <tr><td>Shims</td><td>$20.00</td></tr>
+          <tr><td>Doors</td><td>$280.00</td></tr>
+          <tr><td>6 lights</td><td>$103.00</td></tr>
+          <tr><td>Toilet install</td><td>$760.00</td></tr>
+          <tr><td>Point Electric wiring</td><td>$1,694.52</td></tr>
+          <tr class="total"><td>Total shown</td><td>$3,204.72</td></tr>
+        </table>
+        <p class="note">Side subtotal from the note: <strong>$583</strong> = saw + doors + lights.</p>
+        <div class="warning"><strong>Not a permit drawing.</strong> Treat this as a planning visualization. Final plumbing, drain slope, electrical/GFCI, HVAC, and waterproofing details need field measurement and code check.</div>
+
+        <h3>Measure next</h3>
+        <div class="checklist">
+          <div class="check"><span class="box"></span><span>Confirm finished width/length from the rough 66&quot; × 132&quot; dimensions.</span></div>
+          <div class="check"><span class="box"></span><span>New toilet centerline on opposite/left wall and front clearance across the 66&quot; width.</span></div>
+          <div class="check"><span class="box"></span><span>Shower finished inside dimensions and exact drain location.</span></div>
+          <div class="check"><span class="box"></span><span>Outswing door slab width, hinge side, and hall-side clearance.</span></div>
+          <div class="check"><span class="box"></span><span>Register duct path, boot size, and framing conflicts.</span></div>
+        </div>
+      </aside>
+    </section>
+
+    <section class="mock-grid">
+      <article class="card mock">
+        <h2>Mock image A — warm modern / live-edge shelf</h2>
+        <svg viewBox="0 0 720 470" role="img" aria-label="Warm modern bathroom mockup">
+          <rect width="720" height="470" fill="#efe7dc"/>
+          <rect x="0" y="285" width="720" height="185" fill="#d9d2c3"/>
+          <path d="M0 285 L720 285" stroke="#a09482" stroke-width="4"/>
+          <rect x="70" y="72" width="270" height="170" rx="12" fill="#f9f5ec" stroke="#bfa789" stroke-width="4"/>
+          <rect x="75" y="77" width="260" height="160" rx="9" fill="#ebe1d2"/>
+          <path d="M52 232 C100 210, 145 240, 205 218 C270 195, 315 230, 370 213 L370 250 C300 266, 250 246, 190 260 C132 274, 90 252, 52 266 Z" fill="#8c5f3b" stroke="#5b3923" stroke-width="4"/>
+          <ellipse cx="210" cy="219" rx="62" ry="28" fill="#fbfbf6" stroke="#6b4b34" stroke-width="4"/>
+          <path d="M190 204 C188 181, 222 181, 220 204" fill="none" stroke="#3f3a36" stroke-width="5"/>
+          <rect x="430" y="70" width="198" height="320" rx="12" fill="#f8fbfb" stroke="#245b78" stroke-width="5"/>
+          <rect x="447" y="87" width="164" height="286" rx="8" fill="#dceef2" opacity=".75"/>
+          <circle cx="530" cy="310" r="20" fill="#f8fbfb" stroke="#245b78" stroke-width="5"/>
+          <path d="M448 118 C500 152, 555 152, 610 118" fill="none" stroke="#fff" stroke-width="5" opacity=".75"/>
+          <rect x="520" y="405" width="74" height="12" rx="5" fill="#5fa8d3" opacity=".35"/>
+          <rect x="510" y="335" width="104" height="24" rx="9" fill="#ffffff" opacity=".45"/>
+          <g transform="translate(520 260)">
+            <rect x="-38" y="-24" width="76" height="38" rx="8" fill="#fff" stroke="#2b241e" stroke-width="3"/>
+            <ellipse cx="0" cy="14" rx="32" ry="40" fill="#fff" stroke="#2b241e" stroke-width="3"/>
+          </g>
+          <rect x="30" y="360" width="220" height="16" rx="8" fill="#e7decf"/>
+          <text x="44" y="420" font-size="22" font-weight="900" fill="#241f1a">Live-edge shelf, single basin, glass walk‑in</text>
+        </svg>
+      </article>
+
+      <article class="card mock">
+        <h2>Mock image B — cleaner contrast / darker floor</h2>
+        <svg viewBox="0 0 720 470" role="img" aria-label="Clean contrast bathroom mockup">
+          <rect width="720" height="470" fill="#f4f4ef"/>
+          <rect x="0" y="292" width="720" height="178" fill="#2d3436"/>
+          <path d="M0 292 L720 292" stroke="#111" stroke-width="4"/>
+          <g opacity=".22" stroke="#fff"><path d="M0 338 H720M0 384 H720M0 430 H720M70 292 V470M140 292 V470M210 292 V470M280 292 V470M350 292 V470M420 292 V470M490 292 V470M560 292 V470M630 292 V470"/></g>
+          <rect x="55" y="68" width="310" height="182" rx="16" fill="#ffffff" stroke="#1e2326" stroke-width="4"/>
+          <path d="M72 206 C132 190, 190 220, 252 198 C292 184, 326 195, 352 188 L352 243 C300 255, 242 235, 190 252 C138 268, 100 240, 72 250 Z" fill="#1e2326"/>
+          <ellipse cx="215" cy="197" rx="58" ry="26" fill="#f5f5f2" stroke="#1e2326" stroke-width="4"/>
+          <rect x="440" y="58" width="190" height="335" rx="4" fill="#f9fbfb" stroke="#1e2326" stroke-width="5"/>
+          <line x1="455" y1="95" x2="615" y2="95" stroke="#80b8c9" stroke-width="10"/>
+          <line x1="455" y1="135" x2="615" y2="135" stroke="#80b8c9" stroke-width="10"/>
+          <line x1="455" y1="175" x2="615" y2="175" stroke="#80b8c9" stroke-width="10"/>
+          <circle cx="535" cy="318" r="19" fill="#fff" stroke="#1e2326" stroke-width="5"/>
+          <g transform="translate(515 254)">
+            <rect x="-37" y="-21" width="74" height="38" rx="8" fill="#fff" stroke="#1e2326" stroke-width="3"/>
+            <ellipse cx="0" cy="16" rx="29" ry="37" fill="#fff" stroke="#1e2326" stroke-width="3"/>
+          </g>
+          <rect x="412" y="230" width="18" height="95" rx="4" fill="#dfe8e4" stroke="#1e2326" stroke-width="3"/>
+          <path d="M430 278 C465 248, 492 246, 517 252" fill="none" stroke="#5fa8d3" stroke-width="5" stroke-dasharray="8 7"/>
+          <text x="44" y="420" font-size="22" font-weight="900" fill="#fff">High contrast, simple lines, exposed floor</text>
+        </svg>
+      </article>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <h2>Build notes by trade</h2>
+        <ul>
+          <li><strong>Plumbing:</strong> toilet move means waste line and venting are the big-ticket unknowns. Confirm joist direction before assuming the route is easy.</li>
+          <li><strong>Shower:</strong> pick waterproofing system early — foam pan, mud bed, or sheet membrane. The drain choice controls slope and framing details.</li>
+          <li><strong>HVAC:</strong> left-wall register still works, but verify it does not crowd the new toilet centerline/clearance envelope.</li>
+          <li><strong>Electrical:</strong> vanity outlets need GFCI protection; lighting boxes should be placed after mirror width is chosen.</li>
+          <li><strong>Framing:</strong> add blocking now for floating counter, shower glass, grab-bar futureproofing, and accessories.</li>
+        </ul>
+      </article>
+      <article class="card">
+        <h2>Most likely “gotchas”</h2>
+        <ul>
+          <li>Outswing door needing hall-side clearance, casing clearance, and code/egress sanity check.</li>
+          <li>Shower drain landing on a joist or awkward framing member.</li>
+          <li>Register boot or duct crowding the opposite-wall toilet rough-in.</li>
+          <li>Floating live-edge shelf ending too high if the basin is a vessel sink.</li>
+          <li>Forgetting finished-wall thickness when using the 66 7/16&quot; bare-stud measurement.</li>
+        </ul>
+      </article>
+    </section>
+  </main>
+
+  <footer>Generated as a local planning mockup from JW’s photos/sketch. Update dimensions as field measurements firm up.</footer>
+</body>
+</html>
