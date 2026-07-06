@@ -214,8 +214,10 @@
           <line class="sthin" x1="223" y1="553" x2="230" y2="547"/>
           <line class="sthin" x1="223" y1="567" x2="230" y2="573"/>
           <text class="tmut" x="238" y="564">shower head — left wall</text>
-          <rect class="sfix" x="230" y="588" width="228" height="6"/>
-          <text class="tmut" x="230" y="582">linear drain — verify joists below</text>
+          <rect class="sfix" x="348" y="556" width="16" height="16"/>
+          <line class="sthin" x1="348" y1="556" x2="364" y2="572"/>
+          <line class="sthin" x1="364" y1="556" x2="348" y2="572"/>
+          <text class="tmut" x="230" y="588">standard center drain — verify joists below</text>
           <text class="tlbl" x="222" y="530">doorless walk-in shower</text>
           <text class="tmut" x="222" y="542">at old toilet end &#183; pan + waterproofing TBD</text>
 
@@ -364,11 +366,11 @@
             <circle cx="104" cy="132" r="10"/>
             <circle cx="104" cy="260" r="7"/>
             <rect x="238" y="226" width="60" height="52"/>
-            <line x1="96" y1="430" x2="328" y2="430"/>
+            <rect x="204" y="426" width="16" height="8"/>
           </g>
           <text class="tmut" x="120" y="118">shower head — left wall, beyond</text>
           <text class="tmut" x="240" y="222">niche beyond</text>
-          <text class="tmut" x="96" y="424">linear drain beyond</text>
+          <text class="tmut" x="96" y="424">center drain beyond</text>
 
           <!-- half wall (left 38", toilet side) -->
           <rect x="80" y="276" width="152" height="168" fill="#e6ebec" stroke="#22282d" stroke-width="1.4"/>
@@ -453,7 +455,7 @@
       <li>Joist direction and spacing under proposed shower drain location.</li>
       <li>Shower valve + head rough-in on left wall — clearance from toilet plumbing/venting.</li>
       <li>Waterproofing system and warranty — half wall, glass channel, open entry, shower-head wall penetrations.</li>
-      <li>Shower pan: curb vs. curbless; final drain location.</li>
+      <li>Shower pan: curb vs. curbless; standard center drain — final location.</li>
       <li>Blocking/bracket support for wall-mount high-back sink and full-width live-edge counter; sink rim height, supply/drain rough-ins.</li>
       <li>Left 29&Prime; door outswing clearance; right 29&Prime; door inswing away from sink.</li>
       <li>AC register relocation to right wall — duct path, framing, shower-glass conflicts.</li>
@@ -666,7 +668,7 @@
   var shFloor=new THREE.Mesh(new THREE.PlaneGeometry(W,SHOWER_D), M.slate);
   shFloor.rotation.x=-Math.PI/2; shFloor.position.set(W/2,0.15,SHZ+SHOWER_D/2);
   shFloor.receiveShadow=true; scene.add(shFloor);
-  box(50, 0.5, 2.4, M.steel, W/2, 0.35, L-3);                       // linear drain
+  cyl(2.5, 2.5, 0.4, M.steel, W/2, 0.3, SHZ+SHOWER_D/2);            // standard center drain
   // half wall: from LEFT wall (toilet side), 38" long, 42" high
   var hwx = HWLEN/2;                                                // center x = 19
   box(HWLEN, HWH, 5, M.tile, hwx, HWH/2, SHZ);
