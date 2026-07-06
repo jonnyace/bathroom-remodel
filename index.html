@@ -65,12 +65,6 @@
   /* ---- tables & cards ---- */
   h2.sec{font-size:13px;font-family:var(--mono);letter-spacing:.14em;color:var(--mut);
     margin:44px 0 12px;text-transform:uppercase}
-  table.cost{width:100%;border-collapse:collapse;background:var(--sheet);border:1.6px solid var(--ink)}
-  table.cost td{padding:8px 14px;border-bottom:1px solid var(--hair);font-size:14px}
-  table.cost td:last-child{text-align:right;font-family:var(--mono);font-size:13px}
-  table.cost tr.total td{border-top:1.6px solid var(--ink);border-bottom:none;font-weight:700}
-  .fineprint{font-family:var(--mono);font-size:11px;color:var(--mut);margin-top:8px}
-  .cards{display:grid;grid-template-columns:1fr 1fr;gap:20px}
   .card{background:var(--sheet);border:1px solid var(--hair);border-top:3px solid var(--teal);padding:16px 18px}
   .card.risk{border-top-color:var(--risk)}
   .card h3{font-size:13px;font-family:var(--mono);letter-spacing:.08em;margin-bottom:8px}
@@ -99,7 +93,6 @@
     .split{grid-template-columns:1fr}
     .split .notes{border-left:none;border-top:1px solid var(--hair)}
     .elevpair{grid-template-columns:1fr}
-    .cards{grid-template-columns:1fr}
     .titleblock{grid-template-columns:1fr 1fr}
     .titleblock>div:nth-child(3){border-left:none;border-top:1px solid var(--ink)}
     .titleblock>div:nth-child(4){border-top:1px solid var(--ink)}
@@ -452,60 +445,23 @@
     </div>
   </div>
 
-  <!-- ============ COST TRACKER ============ -->
-  <h2 class="sec">Current cost tracker</h2>
-  <table class="cost">
-    <tr><td>Saw</td><td>$200.00</td></tr>
-    <tr><td>2x4s</td><td>$51.24</td></tr>
-    <tr><td>3&Prime; construction screws</td><td>$35.96</td></tr>
-    <tr><td>Electrical supplies</td><td>$40.00</td></tr>
-    <tr><td>Framing square</td><td>$20.00</td></tr>
-    <tr><td>Shims</td><td>$20.00</td></tr>
-    <tr><td>Doors</td><td>$280.00</td></tr>
-    <tr><td>6 lights</td><td>$103.00</td></tr>
-    <tr><td>Toilet install</td><td>$760.00</td></tr>
-    <tr><td>Point Electric wiring</td><td>$1,694.52</td></tr>
-    <tr class="total"><td>Total shown</td><td>$3,204.72</td></tr>
-  </table>
-  <p class="fineprint">Old sketch subtotal: $583 = saw + doors + lights. This is a contractor-conversation set — still not code/permit-ready.</p>
-
-  <!-- ============ QUOTE NOTES ============ -->
-  <h2 class="sec">Quote notes</h2>
-  <div class="cards">
-    <div class="card">
-      <h3>QUOTE-READY SCOPE NOTES</h3>
-      <ul>
-        <li><strong>Demo:</strong> remove existing vanity/toilet finishes as needed; inspect subfloor and framing.</li>
-        <li><strong>Plumbing:</strong> relocate toilet to left wall; verify drain size, slope, venting, joist path.</li>
-        <li><strong>Sink:</strong> wall-mount high-back farm sink with two-hole splash faucet, set into/cut around a full-width live-edge counter; verify sink hanger/rim height, supply/drain rough-ins, wall blocking, and counter support.</li>
-        <li><strong>Shower:</strong> doorless walk-in with open right-side entry away from the toilet, half wall on the toilet side, glass to ceiling, shower head on the same left wall as the toilet, pan/waterproofing, curb/curbless, drain location.</li>
-        <li><strong>Electrical:</strong> GFCI outlets, vanity lighting, shower-rated light if inside wet zone, exhaust fan.</li>
-        <li><strong>HVAC:</strong> register to opposite/right wall across from toilet; verify duct path and framing conflicts.</li>
-        <li><strong>Carpentry:</strong> solid blocking for the wall-hung sink and live-edge counter, shower glass, accessories, future grab bars.</li>
-      </ul>
-    </div>
-    <div class="card risk">
-      <h3>ASK THE CONTRACTOR</h3>
-      <ol>
-        <li>Can the toilet drain/vent legally move to the left wall without soffits or floor surgery?</li>
-        <li>Where are the joists running under the proposed shower drain?</li>
-        <li>Can the shower head and valve be roughed into the same left wall as the toilet without fighting toilet plumbing/venting?</li>
-        <li>What waterproofing system will you warranty around the half wall, glass channel, open entry, and shower-head wall penetrations?</li>
-        <li>Can the wall-mount high-back sink and full-width live-edge counter both be supported cleanly with blocking/brackets?</li>
-        <li>Can the left 29&Prime; door safely swing out, and does the right 29&Prime; door swing inward away from the sink without hitting circulation?</li>
-        <li>Can the AC register move to the right wall without duct, framing, or shower-glass conflicts?</li>
-      </ol>
-    </div>
-    <div class="card risk">
-      <h3>RISK FLAGS / PROFESSIONAL VERIFICATION</h3>
-      <ul>
-        <li>Moving the toilet is expensive and venting must be legal.</li>
-        <li>Shower leaks ruin houses: get the waterproofing system and glass/half-wall transitions warranted.</li>
-        <li>Wall-hung farm sink plus live-edge counter needs real blocking/support, not drywall anchors. Obviously.</li>
-        <li>GFCI everywhere wet; shower-rated light if inside wet zone.</li>
-        <li>Finished dimensions must be rechecked after wall board, tile, trim, and door casing.</li>
-      </ul>
-    </div>
+  <!-- ============ TO CONFIRM ============ -->
+  <h2 class="sec">To confirm</h2>
+  <div class="card risk">
+    <h3>TO CONFIRM</h3>
+    <ul>
+      <li>Toilet drain/vent relocation to left wall — code path, joist routing, soffit/floor impact.</li>
+      <li>Joist direction and spacing under proposed shower drain location.</li>
+      <li>Shower valve + head rough-in on left wall — clearance from toilet plumbing/venting.</li>
+      <li>Waterproofing system and warranty — half wall, glass channel, open entry, shower-head wall penetrations.</li>
+      <li>Shower pan: curb vs. curbless; final drain location.</li>
+      <li>Blocking/bracket support for wall-mount high-back sink and full-width live-edge counter; sink rim height, supply/drain rough-ins.</li>
+      <li>Left 29&Prime; door outswing clearance; right 29&Prime; door inswing away from sink.</li>
+      <li>AC register relocation to right wall — duct path, framing, shower-glass conflicts.</li>
+      <li>Electrical: GFCI coverage, shower-rated light if inside wet zone, exhaust fan venting.</li>
+      <li>Subfloor and framing condition after demo.</li>
+      <li>Finished dimensions after wall board, tile, trim, and door casing.</li>
+    </ul>
   </div>
 
   <footer class="disc">
