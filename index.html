@@ -411,16 +411,13 @@
 
   <!-- ============ SHEET A-3 : 3D MODEL ============ -->
   <div class="sheet">
-    <div class="sheet-body" style="padding-bottom:0">
-      <div class="card" style="border-top-color:var(--wood);margin-bottom:14px">
-        <h3>3D RENDERING DEPENDENCY NOTE</h3>
-        <ul>
-          <li>The interactive A-3 model requires <strong>Three.js r128</strong> from the cdnjs CDN: <code>https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js</code>.</li>
-          <li>The 2D plan/elevation sheets are inline SVG and render without that dependency.</li>
-          <li>For full offline/self-hosted use, download <code>three.min.js</code>, place it next to this file, and change the script source to <code>./three.min.js</code>.</li>
-        </ul>
-      </div>
-    </div>
+    <!-- Developer note (repo-only, not for the public page):
+      The interactive A-3 model requires Three.js r128 from the cdnjs CDN:
+      https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js
+      The 2D plan/elevation sheets are inline SVG and render without that dependency.
+      For full offline/self-hosted use, download three.min.js, place it next to
+      this file, and change the script source to ./three.min.js.
+    -->
     <div id="viewer"></div>
     <div id="vbar" role="toolbar" aria-label="3D model views">
       <button data-view="overview" class="active">Overview</button>
