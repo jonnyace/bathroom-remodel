@@ -36,13 +36,6 @@
   .titleblock>div{padding:8px 12px;border-left:1px solid var(--ink)}
   .titleblock>div:first-child{border-left:none}
   .titleblock .k{display:block;font-size:9px;color:var(--mut);letter-spacing:.08em;margin-bottom:2px}
-  .split{display:grid;grid-template-columns:1.55fr 1fr;gap:0}
-  .split .notes{border-left:1px solid var(--hair);padding:22px 20px 14px}
-  .notes h3{font-family:var(--mono);font-size:11px;letter-spacing:.1em;color:var(--mut);margin-bottom:8px}
-  .notes ul{list-style:none;margin-bottom:18px}
-  .notes li{font-size:13px;padding:5px 0 5px 16px;position:relative;border-bottom:1px solid var(--hair)}
-  .notes li::before{content:"";position:absolute;left:0;top:12px;width:7px;height:7px;
-    border:1.5px solid var(--teal);border-radius:1px}
   .elevpair{display:grid;grid-template-columns:1fr 1fr;gap:26px}
 
   /* ---- 3D viewer ---- */
@@ -89,8 +82,6 @@
   .tilezone{fill:#e6ebec}
 
   @media(max-width:820px){
-    .split{grid-template-columns:1fr}
-    .split .notes{border-left:none;border-top:1px solid var(--hair)}
     .elevpair{grid-template-columns:1fr}
     .titleblock{grid-template-columns:1fr 1fr}
     .titleblock>div:nth-child(3){border-left:none;border-top:1px solid var(--ink)}
@@ -128,9 +119,8 @@
 
   <!-- ============ SHEET A-1 : FLOOR PLAN ============ -->
   <div class="sheet">
-    <div class="split">
-      <div class="sheet-body">
-        <svg viewBox="0 0 660 700" role="img" aria-label="Floor plan, 66 by 132 inch bathroom">
+    <div class="sheet-body">
+      <svg viewBox="0 0 660 700" style="max-width:680px;margin:0 auto" role="img" aria-label="Floor plan, 66 by 132 inch bathroom">
           <defs>
             <pattern id="hatch" width="7" height="7" patternTransform="rotate(45)" patternUnits="userSpaceOnUse">
               <line x1="0" y1="0" x2="0" y2="7" stroke="#22282d" stroke-width="1"/>
@@ -264,23 +254,7 @@
           <!-- north-ish key -->
           <text class="tmut" x="194" y="666">PLAN VIEW &#183; wall thickness nominal &#183; hatched = existing, cross-hatched = new work</text>
         </svg>
-      </div>
-      <div class="notes">
-        <h3>FIELD VERIFY</h3>
-        <ul>
-          <li>Exact locations + hinge sides of both 29&Prime; doors flanking the sink</li>
-          <li>Left door outswing clearance; right door inswing path away from sink</li>
-          <li>Joist direction under proposed shower drain</li>
-          <li>Sink hanger/rim height, drain + supply rough-ins per its installation guide</li>
-          <li>Toilet drain rough-in target + legal vent route — no soffits or floor surgery</li>
-          <li>Shower finished dims, entry width, half-wall length/height, glass-to-ceiling detail</li>
-          <li>HVAC boot size + duct bay for right-wall register</li>
-          <li>Ceiling height, exhaust fan path, light/switch locations</li>
-          <li>Waterproofing system + warranty coverage</li>
-          <li>GFCI everywhere wet; shower-rated light if inside wet zone</li>
-        </ul>
-        <a class="dl" href="https://jonnyace.github.io/bathroom-remodel/bathroom-remodel-concept.excalidraw">&#8595; download editable Excalidraw</a>
-      </div>
+      <a class="dl" href="https://jonnyace.github.io/bathroom-remodel/bathroom-remodel-concept.excalidraw">&#8595; download editable Excalidraw</a>
     </div>
     <div class="titleblock">
       <div><span class="k">PROJECT</span>BATHROOM REMODEL — OWNER PLANNING SET</div>
@@ -448,11 +422,12 @@
       <li>Shower valve + head rough-in on left wall — clearance from toilet plumbing/venting.</li>
       <li>Waterproofing system and warranty — half wall, glass channel, open entry, shower-head wall penetrations.</li>
       <li>Shower pan: curb vs. curbless; standard center drain — final location.</li>
-      <li>Blocking/bracket support for wall-mount high-back sink and full-width live-edge counter; sink rim height, supply/drain rough-ins.</li>
-      <li>Left 29&Prime; door outswing clearance; right 29&Prime; door inswing away from sink.</li>
-      <li>AC register relocation to right wall — duct path, framing, shower-glass conflicts.</li>
-      <li>Electrical: GFCI coverage, shower-rated light if inside wet zone, exhaust fan venting.</li>
-      <li>Subfloor and framing condition after demo.</li>
+      <li>Shower finished dimensions — entry width, half-wall length/height, glass-to-ceiling detail.</li>
+      <li>Blocking/bracket support for wall-mount high-back sink and full-width live-edge counter; sink rim height, supply/drain rough-ins per installation guide.</li>
+      <li>Exact jamb locations + hinge sides of both 29&Prime; doors; left outswing clearance, right inswing path away from sink.</li>
+      <li>AC register relocation to right wall — boot size, duct path, framing, shower-glass conflicts.</li>
+      <li>Electrical: GFCI coverage, shower-rated light if inside wet zone, exhaust fan venting, light/switch locations.</li>
+      <li>Ceiling height; subfloor and framing condition after demo.</li>
       <li>Finished dimensions after wall board, tile, trim, and door casing.</li>
     </ul>
   </div>
